@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>picMargin Demo</title>
+    <meta charset="utf-8">
+    <link href="script/jquery.picMarque.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="marquePic" style="width:1170px;"></div> <!-- you must set a width for the container -->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="script/jquery.picMarque.js"></script><script type="text/javascript">
+      $(document).ready(function(){
+        var picData = [      //image data（json），param：image（image path），title（image title），link（image link）
+				          {
+				            image:'img/1.jpg',
+				            title:'image title 1',
+				            link:'#'
+				          },
+				          {
+				            image:'img/2.jpg',
+				            title:'image title 2',
+				            link:'#'
+				          },
+				          {
+				            image:'img/3.jpg',
+				            title:'image title 3',
+				            link:'#'
+				          },
+				          {
+				            image:'img/4.jpg',
+				            title:'image title 4',
+				            link:'#'
+				          },
+				          {
+				            image:'img/5.jpg',
+				            title:'image title 5',
+				            link:'#'
+				          }]
+
+        // init pit
+        $("#marquePic").picMarque({
+          speed: 60,//scroll speed（ms）
+          errorimg: 'http://www.siaa.org.cn/style/common/nophoto.jpg',//error image path
+          data: picData
+        })
+      });
+ 
+    </script>
+</body>
+</html>
