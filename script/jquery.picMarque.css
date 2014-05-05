@@ -1,4 +1,4 @@
-/*
+﻿/*
 picMarque v1.0.0
 Author: Spring Wang 
 Git: https://github.com/YiquanWang/jquery.picMarque
@@ -55,6 +55,5 @@ Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.p
     text-overflow: ellipsis;
     overflow: hidden;
     width: 200px;
+    text-align: center;
 }
-
-/*滚动图片样式*/
