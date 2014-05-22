@@ -6,8 +6,61 @@
     <link href="script/jquery.picMarque.css" rel="stylesheet">
 </head>
 <body>
-
+	Demo 1:
     <div id="marquePic" style="width:1170px;"></div> <!-- you must set a width for the container -->
+
+    Demo 2:
+	<div id="marquePic2" class="marque-box"  style="width:1170px;">
+	<table cellspacing="0" cellpadding="0" border="0">
+	  <tbody>
+	    <tr>
+	      <td data-marqueebox="1">
+	        <div class="marque-main">
+	          <ul>
+	            <li>
+	              <a href="#">
+	                <img src="img/1.jpg" alt="1111111" 
+	                onerror="this.src='http://www.siaa.org.cn/style/common/nophoto.jpg'">
+	              </a>
+	              <div class="splendid-links">1111111</div>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <img src="img/2.jpg" alt="2222222" 
+	                onerror="this.src='http://www.siaa.org.cn/style/common/nophoto.jpg'">
+	              </a>
+	              <div class="splendid-links">2222222</div>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <img src="img/3.jpg" alt="3333333" 
+	                onerror="this.src='http://www.siaa.org.cn/style/common/nophoto.jpg'">
+	              </a>
+	              <div class="splendid-links">3333333</div>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <img src="img/4.jpg" alt="4444444" 
+	                onerror="this.src='http://www.siaa.org.cn/style/common/nophoto.jpg'">
+	              </a>
+	              <div class="splendid-links">4444444</div>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <img src="img/5.jpg" alt="5555555" 
+	                onerror="this.src='http://www.siaa.org.cn/style/common/nophoto.jpg'">
+	              </a>
+	              <div class="splendid-links">5555555</div>
+	            </li>
+	          </ul>
+	        </div>
+	      </td>
+	      <td data-marqueebox="2">
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="script/jquery.picMarque.js"></script><script type="text/javascript">
@@ -39,12 +92,15 @@
 				            link:'#'
 				          }]
 
-        // init pit
+        // init pic
         $("#marquePic").picMarque({
           speed: 60,//scroll speed（ms）
           errorimg: 'http://www.siaa.org.cn/style/common/nophoto.jpg',//error image path
           data: picData
         })
+
+        // init pic for template
+        $("#marquePic2").picMarque()
       });
  
     </script>
